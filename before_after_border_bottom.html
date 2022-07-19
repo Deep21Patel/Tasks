@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		div
+		{
+			height: 50px;
+			background: black;
+			display: flex;
+			place-items: center;
+			justify-content: center;
+		}
+
+		li
+		{
+			list-style: none;
+			display: inline;
+			margin-right: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+
+		li
+		{
+			position: relative;
+		}
+		
+		li::after
+		{
+			content:" " ;
+			position: absolute;
+			height: 5px;
+			width: 0px;
+			background: blueviolet;
+			top: 100%;
+			left: 0%;
+			transition: .3s;
+		}
+
+		li:hover::after
+		{
+			
+			width: 50px;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+
+		<li><a href="">home</a></li>
+		<li><a href="">home</a></li>
+		<li><a href="">home</a></li>
+		<li><a href="">home</a></li>
+		<li><a href="">home</a></li>
+		
+	</div>
+
+</body>
+</html>
